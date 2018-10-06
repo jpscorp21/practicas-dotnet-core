@@ -13,14 +13,14 @@ namespace WebApiPaises.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "value1", "value2", "value3", "value4" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "value " + id.ToString();
         }
 
         // POST api/values
